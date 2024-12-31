@@ -39,10 +39,10 @@ To view the website, simply open the HTML file in a web browser. The website is 
 
 You can reach me through the following platforms:
 
-- [Facebook](https://www.facebook.com/yourprofile)
-- [Twitter](https://twitter.com/yourprofile)
-- [LinkTree](https://linktr.ee/yourprofile)
-- [Email](mailto:your.email@example.com)
+- [LinkedIn]([https://www.facebook.com/yourprofile](https://www.linkedin.com/in/devadityaraj/))
+- [Instagram](https://instagram.com/developer.adi)
+- [LinkTree](https://linktr.ee/developeradi)
+- [Email](mailto:adityaraj94505@gmail.com)
 
 ---
 
