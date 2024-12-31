@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+header {
+    height: 50vh;
+    min-height: 1000px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .heading {
+    color: var(--lighter-black);
+    line-height: 1;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-shadow: -1px -1px 0 var(--white), 1px -1px 0 var(--white),
+      -1px 1px 0 var(--white), 1px 1px 0 var(--white);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 30em;
+    z-index: 10;
+  }
+  
+  .intro {
+    font-size: 8em;
+    margin-bottom: 0;
+  }
+  
+  .lead {
+    color: var(--grey);
+    font-size: 2em;
+    margin-bottom: 60px;
+  }
+  
+  .main-photo {
+    background: url("../media/adityaraj.png");
+    background-position: center;
+    background-size: cover;
+    border: 7px solid var(--lighter-black);
+    border-radius: 50%;
+    height: 20em;
+    position: absolute;
+    top: calc(45% - 25.5em);
+    left: calc(50% - 25em);
+    width: 20em;
+    box-shadow: 0 10px 20px #0056b3;
+  }
+  
+  .main-photo:before {
+    border: 7px solid var(--white);
+    border-radius: 50%;
+    content: " ";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    z-index: -1;
+  }
+  

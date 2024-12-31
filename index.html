@@ -1,0 +1,154 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Raj - Personal Website</title>
+    <link rel="stylesheet" href="media/style.css">
+    <link rel="stylesheet" href="media/style2.css">
+</head>
+<body>
+
+<main>
+    <video class="video-background" autoplay loop muted playsinline>
+        <source src="media/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+    <header class="header show-on-scroll">
+        <div class="main-photo"></div>
+        <div class="heading">
+          <h1 class="intro">Hi, my name is Aditya</h1>
+          <p class="lead">
+            I'm a 2nd Year Student! <br> I love Electronics, Aviation and Robotics.
+        </div>
+    </header>
+
+        <section id="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="card">
+                <p>
+                    Hi! I'm Aditya Raj, a passionate full-stack developer with a strong background in building web applications.
+                     I specialize in creating dynamic, user-friendly interfaces and solving complex problems through code. 
+                     I thrive on challenges and enjoy turning abstract ideas into functional and aesthetically pleasing solutions. 
+                     In addition to my work in web development, I have a deep interest in robotics and aviation, where I contribute to my college projects and explore new technologies. 
+                     Outside of these pursuits, I'm always working on innovative personal ventures, striving to push boundaries and make an impact in the tech world.
+                </p>
+            </div>
+        </section>
+
+        <section id="learning">
+            <div class="section-header">
+                <h2>Current Learning</h2>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Robotics and Aviation</h3>
+                    <p>Currently I am working actively to make few robots and a personal RC F-22 Jet.</p>
+                </div>
+                <div class="card">
+                    <h3>DSA</h3>
+                    <p>I am solving questions and making my solution-solving skills more sharp.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="learning">
+            <div class="section-header">
+                <h2>Major 2024 Achievements</h2>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Selected for SIH'24</h3>
+                    <p><img src="media/sih.jpg" width="460px" height="320px" alt="SIH-Team-members"></p>
+                </div>
+                <div class="card">
+                    <h3>2nd in AKTU - RoboWars</h3>
+                    <p><img src="media/fire.jpg" width="460px" height="320px" alt="botimage"></p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="goals">
+            <div class="section-header">
+                <h2>Goals for 2025</h2>
+            </div>
+            <div class="card">
+                <h3>Professional Goals</h3>
+                <ul class="list">
+                    <li>Start Google Cloud Arcade.</li>
+                    <li>DSA in C++</li>
+                    <li>Make robots for College</li>
+                    <li>Master in Web Development.</li>
+                </ul>
+                <h3 style="margin-top: 1.5rem;">Personal Goals</h3>
+                <ul class="list">
+                    <li>Made my own F-22 with custom Controller.</li>
+                    <li>Launch my Crypto on Binance TestNet.</li>
+                    <li>Make few electronics projects.</li>
+                    <li>Make some web apps.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="resolutions">
+            <div class="section-header">
+                <h2>New Year Resolutions</h2>
+            </div>
+            <div class="card">
+                <ul class="list">
+                    <li>Complete at least 2 major certification courses</li>
+                    <li>Build Alteast 1 Big Project Every 2 Months.</li>
+                    <li>Little bit focous on Health.</li>
+                    <li>Attend more events and Win Hackathons.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer style="color: white; padding: 20px; text-align: center;">
+            <div>
+              <p>&copy; 2024 Aditya Raj</p>
+            </div>
+            <div>
+              <a href="https://github.com/devadityaraj" target="_blank">
+                <img src="media/github.jpg" alt="Facebook" style="width: 30px; height: 30px; margin: 5px;">
+              </a>
+              <a href="https://www.linkedin.com/in/devadityaraj/ target="_blank">
+                <img src="https://www.linkedin.com/favicon.ico" alt="Twitter" style="width: 30px; height: 30px; margin: 5px;">
+              </a>
+              <a href="https://linktr.ee/developeradi" target="_blank">
+                <img src="https://linktr.ee/favicon.ico" alt="LinkTree" style="width: 30px; height: 30px; margin: 5px;">
+              </a>
+              <a href="mailto:adityaraj94505@gmail.com target="_blank">
+                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Email" style="width: 30px; height: 30px; margin: 5px;">
+              </a>
+            </div>
+          </footer>
+          
+    </main>
+
+    <script>
+        const body = document.body;
+        body.classList.toggle('dark-theme'); //removed light theme and used dark theme only.
+        
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            },
+            {
+                threshold: 0.2
+            }
+        );
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
