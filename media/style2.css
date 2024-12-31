@@ -182,31 +182,24 @@ h3 {
     background: rgba(255, 255, 255, 0.2);
 }
 
+  .sidebar {
+    display: none;
+  }
+
 @media (max-width: 768px) {
-    .topsection {
-        flex-direction: column;
-        text-align: center;
-        padding: 1.5rem;
-    }
+  body {
+    font-size: 14px; 
+  }
 
-    .profile-image {
-        width: 150px;
-        height: 150px;
-    }
+  .container {
+    grid-template-columns: 1fr; 
+  }
 
-    .header-content {
-        padding: 1rem;
-    }
-    
-    main {
-        padding: 2rem 1rem;
-    }
+  .header {
+    text-align: center; 
+  }
 
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .social-links {
-        justify-content: center;
-    }
+  .sidebar {
+    display: none;
+  }
 }
