@@ -71,4 +71,25 @@ header {
     left: 1px;
     z-index: -1;
   }
+  .sidebar {
+    display: none;
+  }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; 
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    text-align: center; 
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
   
